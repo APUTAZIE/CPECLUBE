@@ -1,9 +1,9 @@
- 
 secret_number = 13
 guess = 0
 attempts = 0
 
 while guess != secret_number and attempts < 3:
+
 
     guess = int(input("Guess a number between 1 and 20: "))
     attempts += 1
@@ -17,9 +17,11 @@ while guess != secret_number and attempts < 3:
     else:
         print("Congratulations! You guessed the number!")
         break
-if guess != secret_number:
-        print("Game Over! You have used all 3 attempts. ")
 
-        play_again = input("do you want to play again? (yes/no:) ").lower()
-        print("Thanks for playing Mind Teaser!")
+if guess != secret_number:
+    print("Game Over! You have used all 3 attempts. ")
+
+    play_again = input("do you want to play again? (yes/no:) ").lower()
+    
+print("Thanks for playing Mind Teaser!")
     
